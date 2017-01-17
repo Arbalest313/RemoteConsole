@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>TestNSlog[39888]</title>
+    <style>
+    body {
+        margin: 0px;
+        font-family: Courier, monospace;
+        font-size: 0.8em;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    tr {
+        vertical-align: top;
+    }
+    
+    tr:nth-child(odd) {
+        background-color: #eeeeee;
+    }
+    
+    td {
+        padding: 2px 10px;
+    }
+    
+    #footer {
+        text-align: center;
+        margin: 20px 0px;
+        color: darkgray;
+    }
+    
+    .error {
+        color: red;
+        font-weight: bold;
+    }
+    </style>
+    
+    <script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+
+    <script>
+    var refreshDelay = 500;
+    var footerElement = null;
+
+    function updateTimestamp() {
+        var now = new Date();
+        footerElement.innerHTML = "Last updated on " + now.toLocaleDateString() + " " + now.toLocaleTimeString();
+    }
+
+
+    $( window ).load(function() {
+        footerElement = document.getElementById("footer");
+        updateTimestamp();
+        init();
+    });
+
+    var ipAddress = getUrlParameter('ip');
+    var wsUri ="ws://" + ipAddress + ":8080"; 
+    var output;  
+    
+    function init() { 
+        output = document.getElementById("content"); 
+        testWebSocket(); 
+    }  
+ 
+    function testWebSocket() { 
+        var websocket = new WebSocket(wsUri); 
+        websocket.onopen = function(evt) { 
+            onOpen(evt) 
+        }; 
+        websocket.onclose = function(evt) { 
+            onClose(evt) 
+        }; 
+        websocket.onmessage = function(evt) { 
+            onMessage(evt) 
+        }; 
+        websocket.onerror = function(evt) { 
+            onError(evt) 
+        }; 
+    }  
+ 
+    function onOpen(evt) { 
+        writeToScreen("CONNECTED"); 
+        // doSend("WebSocket rocks"); 
+    }  
+ 
+    function onClose(evt) { 
+        writeToScreen("DISCONNECTED"); 
+    }  
+ 
+    function onMessage(evt) { 
+        writeToScreen(evt.data); 
+
+    }  
+ 
+    function onError(evt) { 
+        writeToScreen( evt.data); 
+    }  
+ 
+    function doSend(message) { 
+        writeToScreen("SENT: " + message);  
+        websocket.send(message); 
+    }  
+ 
+    function writeToScreen(message) { 
+      var tr = document.createElement('tr');   
+      var pre = document.createElement('pre');
+      var td1 = document.createElement('td');
+      var text1 = document.createTextNode(message);
+      pre.appendChild(text1)
+      td1.appendChild(pre);
+      tr.appendChild(td1);
+
+      var lowerM = message.toLowerCase()
+      if (lowerM.indexOf("code = 0") >= 0 || lowerM.indexOf("error") >= 0 || lowerM.indexOf("exception") >= 0) {
+        tr.style.background = "#E97E60"
+      } else if (lowerM.indexOf("warning") >= 0) {
+        tr.style.background = "#FACC9A"
+      } else if (lowerM.indexOf("-- response") >= 0) {
+        tr.style.color = "#5BBB7B"
+      }
+      
+      output.appendChild(tr);
+      footerElement.scrollIntoView(false);
+      updateTimestamp();
+
+    }  
+
+    function getUrlParameter(sParam) {
+          var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+              sURLVariables = sPageURL.split('&'),
+              sParameterName,
+              i;
+
+          for (i = 0; i < sURLVariables.length; i++) {
+              sParameterName = sURLVariables[i].split('=');
+
+              if (sParameterName[0] === sParam) {
+                  return sParameterName[1] === undefined ? true : sParameterName[1];
+              }
+          }
+      }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tbody id="content"></tbody>
+    </table>
+    <div id="footer">Last updated on 1/10/2017 5:51:18 PM</div>
+</body>
+
+</html>

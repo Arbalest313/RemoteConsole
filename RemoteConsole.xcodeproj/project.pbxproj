@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CE7D2741E2DE9FB00607C06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7D2731E2DE9FB00607C06 /* main.m */; };
+		1CE7D2771E2DE9FB00607C06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7D2761E2DE9FB00607C06 /* AppDelegate.m */; };
+		1CE7D27A1E2DE9FB00607C06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7D2791E2DE9FB00607C06 /* ViewController.m */; };
+		1CE7D27D1E2DE9FB00607C06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7D27B1E2DE9FB00607C06 /* Main.storyboard */; };
+		1CE7D27F1E2DE9FB00607C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7D27E1E2DE9FB00607C06 /* Assets.xcassets */; };
+		1CE7D2821E2DE9FB00607C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7D2801E2DE9FB00607C06 /* LaunchScreen.storyboard */; };
+		1CE7D28D1E2DE9FB00607C06 /* RemoteConsoleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7D28C1E2DE9FB00607C06 /* RemoteConsoleTests.m */; };
+		1CE7D2991E2DEC0200607C06 /* RemoteConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7D2981E2DEC0200607C06 /* RemoteConsole.m */; };
+		1CE7D29C1E2E0FD800607C06 /* xcodeConsole.html in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7D29B1E2E0FD800607C06 /* xcodeConsole.html */; };
+		7F32969E8F5E061991FECA45 /* libPods-RemoteConsole.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F44FDCF8BB11016EC53DF8 /* libPods-RemoteConsole.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CE7D2891E2DE9FB00607C06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CE7D2671E2DE9FB00607C06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CE7D26E1E2DE9FB00607C06;
+			remoteInfo = RemoteConsole;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CE7D26F1E2DE9FB00607C06 /* RemoteConsole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteConsole.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE7D2731E2DE9FB00607C06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CE7D2751E2DE9FB00607C06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1CE7D2761E2DE9FB00607C06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1CE7D2781E2DE9FB00607C06 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1CE7D2791E2DE9FB00607C06 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1CE7D27C1E2DE9FB00607C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CE7D27E1E2DE9FB00607C06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CE7D2811E2DE9FB00607C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CE7D2831E2DE9FB00607C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE7D2881E2DE9FB00607C06 /* RemoteConsoleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteConsoleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE7D28C1E2DE9FB00607C06 /* RemoteConsoleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoteConsoleTests.m; sourceTree = "<group>"; };
+		1CE7D28E1E2DE9FB00607C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE7D2971E2DEC0200607C06 /* RemoteConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteConsole.h; path = RemoteConsole/RemoteConsole.h; sourceTree = "<group>"; };
+		1CE7D2981E2DEC0200607C06 /* RemoteConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteConsole.m; path = RemoteConsole/RemoteConsole.m; sourceTree = "<group>"; };
+		1CE7D29B1E2E0FD800607C06 /* xcodeConsole.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = xcodeConsole.html; sourceTree = "<group>"; };
+		2551B6B2E59F442A4E445526 /* Pods-RemoteConsole.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteConsole.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteConsole/Pods-RemoteConsole.debug.xcconfig"; sourceTree = "<group>"; };
+		93F44FDCF8BB11016EC53DF8 /* libPods-RemoteConsole.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RemoteConsole.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBA7AA163194A8FB246B798 /* Pods-RemoteConsole.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteConsole.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteConsole/Pods-RemoteConsole.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE7D26C1E2DE9FB00607C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F32969E8F5E061991FECA45 /* libPods-RemoteConsole.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE7D2851E2DE9FB00607C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1048E4374A5E474136E9C979 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2551B6B2E59F442A4E445526 /* Pods-RemoteConsole.debug.xcconfig */,
+				DCBA7AA163194A8FB246B798 /* Pods-RemoteConsole.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1CE7D2661E2DE9FB00607C06 = {
+			isa = PBXGroup;
+			children = (
+				1CE7D2711E2DE9FB00607C06 /* RemoteConsole */,
+				1CE7D28B1E2DE9FB00607C06 /* RemoteConsoleTests */,
+				1CE7D2701E2DE9FB00607C06 /* Products */,
+				1048E4374A5E474136E9C979 /* Pods */,
+				4BCFBD4B0E01711C90B095E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE7D2701E2DE9FB00607C06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE7D26F1E2DE9FB00607C06 /* RemoteConsole.app */,
+				1CE7D2881E2DE9FB00607C06 /* RemoteConsoleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE7D2711E2DE9FB00607C06 /* RemoteConsole */ = {
+			isa = PBXGroup;
+			children = (
+				1CE7D29B1E2E0FD800607C06 /* xcodeConsole.html */,
+				1CE7D29A1E2DEC0D00607C06 /* RemoteConsole */,
+				1CE7D2751E2DE9FB00607C06 /* AppDelegate.h */,
+				1CE7D2761E2DE9FB00607C06 /* AppDelegate.m */,
+				1CE7D2781E2DE9FB00607C06 /* ViewController.h */,
+				1CE7D2791E2DE9FB00607C06 /* ViewController.m */,
+				1CE7D27B1E2DE9FB00607C06 /* Main.storyboard */,
+				1CE7D27E1E2DE9FB00607C06 /* Assets.xcassets */,
+				1CE7D2801E2DE9FB00607C06 /* LaunchScreen.storyboard */,
+				1CE7D2831E2DE9FB00607C06 /* Info.plist */,
+				1CE7D2721E2DE9FB00607C06 /* Supporting Files */,
+			);
+			path = RemoteConsole;
+			sourceTree = "<group>";
+		};
+		1CE7D2721E2DE9FB00607C06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CE7D2731E2DE9FB00607C06 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CE7D28B1E2DE9FB00607C06 /* RemoteConsoleTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CE7D28C1E2DE9FB00607C06 /* RemoteConsoleTests.m */,
+				1CE7D28E1E2DE9FB00607C06 /* Info.plist */,
+			);
+			path = RemoteConsoleTests;
+			sourceTree = "<group>";
+		};
+		1CE7D29A1E2DEC0D00607C06 /* RemoteConsole */ = {
+			isa = PBXGroup;
+			children = (
+				1CE7D2971E2DEC0200607C06 /* RemoteConsole.h */,
+				1CE7D2981E2DEC0200607C06 /* RemoteConsole.m */,
+			);
+			name = RemoteConsole;
+			sourceTree = "<group>";
+		};
+		4BCFBD4B0E01711C90B095E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93F44FDCF8BB11016EC53DF8 /* libPods-RemoteConsole.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE7D26E1E2DE9FB00607C06 /* RemoteConsole */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE7D2911E2DE9FB00607C06 /* Build configuration list for PBXNativeTarget "RemoteConsole" */;
+			buildPhases = (
+				3D55294C5DBF0B9332401E4C /* [CP] Check Pods Manifest.lock */,
+				1CE7D26B1E2DE9FB00607C06 /* Sources */,
+				1CE7D26C1E2DE9FB00607C06 /* Frameworks */,
+				1CE7D26D1E2DE9FB00607C06 /* Resources */,
+				1FFB3D93F21EB954E1670FF7 /* [CP] Embed Pods Frameworks */,
+				6ACD3F94084CCC481F6335AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RemoteConsole;
+			productName = RemoteConsole;
+			productReference = 1CE7D26F1E2DE9FB00607C06 /* RemoteConsole.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CE7D2871E2DE9FB00607C06 /* RemoteConsoleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE7D2941E2DE9FB00607C06 /* Build configuration list for PBXNativeTarget "RemoteConsoleTests" */;
+			buildPhases = (
+				1CE7D2841E2DE9FB00607C06 /* Sources */,
+				1CE7D2851E2DE9FB00607C06 /* Frameworks */,
+				1CE7D2861E2DE9FB00607C06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CE7D28A1E2DE9FB00607C06 /* PBXTargetDependency */,
+			);
+			name = RemoteConsoleTests;
+			productName = RemoteConsoleTests;
+			productReference = 1CE7D2881E2DE9FB00607C06 /* RemoteConsoleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE7D2671E2DE9FB00607C06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = hYDev;
+				TargetAttributes = {
+					1CE7D26E1E2DE9FB00607C06 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R2LM547DJG;
+						ProvisioningStyle = Automatic;
+					};
+					1CE7D2871E2DE9FB00607C06 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = R2LM547DJG;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1CE7D26E1E2DE9FB00607C06;
+					};
+				};
+			};
+			buildConfigurationList = 1CE7D26A1E2DE9FB00607C06 /* Build configuration list for PBXProject "RemoteConsole" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CE7D2661E2DE9FB00607C06;
+			productRefGroup = 1CE7D2701E2DE9FB00607C06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE7D26E1E2DE9FB00607C06 /* RemoteConsole */,
+				1CE7D2871E2DE9FB00607C06 /* RemoteConsoleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CE7D26D1E2DE9FB00607C06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE7D2821E2DE9FB00607C06 /* LaunchScreen.storyboard in Resources */,
+				1CE7D27F1E2DE9FB00607C06 /* Assets.xcassets in Resources */,
+				1CE7D29C1E2E0FD800607C06 /* xcodeConsole.html in Resources */,
+				1CE7D27D1E2DE9FB00607C06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE7D2861E2DE9FB00607C06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FFB3D93F21EB954E1670FF7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteConsole/Pods-RemoteConsole-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D55294C5DBF0B9332401E4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACD3F94084CCC481F6335AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteConsole/Pods-RemoteConsole-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE7D26B1E2DE9FB00607C06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE7D27A1E2DE9FB00607C06 /* ViewController.m in Sources */,
+				1CE7D2991E2DEC0200607C06 /* RemoteConsole.m in Sources */,
+				1CE7D2771E2DE9FB00607C06 /* AppDelegate.m in Sources */,
+				1CE7D2741E2DE9FB00607C06 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CE7D2841E2DE9FB00607C06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE7D28D1E2DE9FB00607C06 /* RemoteConsoleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CE7D28A1E2DE9FB00607C06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CE7D26E1E2DE9FB00607C06 /* RemoteConsole */;
+			targetProxy = 1CE7D2891E2DE9FB00607C06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CE7D27B1E2DE9FB00607C06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CE7D27C1E2DE9FB00607C06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CE7D2801E2DE9FB00607C06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CE7D2811E2DE9FB00607C06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CE7D28F1E2DE9FB00607C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1CE7D2901E2DE9FB00607C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CE7D2921E2DE9FB00607C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2551B6B2E59F442A4E445526 /* Pods-RemoteConsole.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R2LM547DJG;
+				INFOPLIST_FILE = RemoteConsole/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hYYY.RemoteConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CE7D2931E2DE9FB00607C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBA7AA163194A8FB246B798 /* Pods-RemoteConsole.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R2LM547DJG;
+				INFOPLIST_FILE = RemoteConsole/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hYYY.RemoteConsole;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CE7D2951E2DE9FB00607C06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R2LM547DJG;
+				INFOPLIST_FILE = RemoteConsoleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hYYY.RemoteConsoleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteConsole.app/RemoteConsole";
+			};
+			name = Debug;
+		};
+		1CE7D2961E2DE9FB00607C06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = R2LM547DJG;
+				INFOPLIST_FILE = RemoteConsoleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.hYYY.RemoteConsoleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RemoteConsole.app/RemoteConsole";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE7D26A1E2DE9FB00607C06 /* Build configuration list for PBXProject "RemoteConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE7D28F1E2DE9FB00607C06 /* Debug */,
+				1CE7D2901E2DE9FB00607C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE7D2911E2DE9FB00607C06 /* Build configuration list for PBXNativeTarget "RemoteConsole" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE7D2921E2DE9FB00607C06 /* Debug */,
+				1CE7D2931E2DE9FB00607C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE7D2941E2DE9FB00607C06 /* Build configuration list for PBXNativeTarget "RemoteConsoleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE7D2951E2DE9FB00607C06 /* Debug */,
+				1CE7D2961E2DE9FB00607C06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CE7D2671E2DE9FB00607C06 /* Project object */;
+}
