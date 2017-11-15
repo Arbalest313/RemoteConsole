@@ -10,6 +10,7 @@
 }
 ```
 3. Ready to go
+
 Seeing your console log anywhere with formatting in colors
 
 [如果你在天朝](http://hyyy.me/2017/01/16/RemoteConsole/)
