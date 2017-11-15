@@ -2,7 +2,7 @@
 ![](https://github.com/Arbalest313/gitRecord/blob/master/RemoteConsole/RemoteConsole.gif?raw=true)
 
 1. Drap xcodeConsole.html into your broswer
-2. Wirte your code
+2. Write your code as following:
 ```objc
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     [[RemoteConsole shared] startServer];
