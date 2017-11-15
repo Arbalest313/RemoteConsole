@@ -1,7 +1,7 @@
 # RemoteConsole
 ![](https://github.com/Arbalest313/gitRecord/blob/master/RemoteConsole/RemoteConsole.gif?raw=true)
 
-1. Drap xcodeConsole.html into your broswer
+1. Drag xcodeConsole.html into your broswer
 2. Write your code as following:
 ```objc
 - (void)applicationDidBecomeActive:(UIApplication *)application {
